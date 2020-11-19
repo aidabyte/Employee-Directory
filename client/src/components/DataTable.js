@@ -24,6 +24,29 @@ class DataTable extends React.Component {
             .catch(err => console.log(err));
             
         };
+
+        
+      
+
+        handleChange = event => {
+ 
+            this.setState({
+             search: event.target.value 
+         }, () => { 
+             if (this.state.search === ""){
+                 this.setState({filteredusers: this.state.result})
+                 console.log(this.setState)
+             }
+             else {
+                 
+     
+             }
+             
+            
+           
+         })
+     }
+     
   
     
   
@@ -31,7 +54,7 @@ class DataTable extends React.Component {
           return (
             <React.Fragment>
              {/*creating a table for everything to display  */}
-             <input type="text" value= {this.state.search}></input>
+             <input type="text" value= {this.state.search} onChange= {this.handleChange}></input>
 
             <table>
                 <tr>
@@ -58,7 +81,7 @@ class DataTable extends React.Component {
 
           )
       }
-  }
+    }
   
   
 export default DataTable;
