@@ -31,6 +31,8 @@ class DataTable extends React.Component {
           return (
             <React.Fragment>
              {/*creating a table for everything to display  */}
+             <input type="text" value= {this.state.search}></input>
+
             <table>
                 <tr>
                     <th>Full Name</th>
