@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavBar from './components/NavBar';
 import DataTable from './components/DataTable';
@@ -12,5 +12,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

@@ -37,7 +37,11 @@ class DataTable extends React.Component {
                  this.setState({filteredusers: this.state.result})
                  console.log(this.setState)
              }
-             else {
+             else {let filteredusers = this.state.result.filter(user => {
+                return user.name.first.slice(0, this.state.search.length).toLowerCase()=== this.state.search.toLowerCase()
+    
+            })
+            this.setState({filteredusers})
                  
      
              }
