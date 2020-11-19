@@ -35,6 +35,8 @@ class DataTable extends React.Component {
                 <tr>
                     <th>Full Name</th>
                     <th>Picture</th> 
+                    <th>Age</th>
+                    <th>Country</th>
                     
                 </tr>
             {this.state.filteredusers.map(user => (
