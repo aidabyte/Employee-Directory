@@ -44,6 +44,8 @@ class DataTable extends React.Component {
                     {/* api calls to get users info */}
                     <td>{user.name.first} {user.name.last}</td>
                     <td> <img src= {user.picture.thumbnail}/></td>
+                    <td>{user.dob.age}</td>
+                    <td>{user.location.country}</td>
                     
                 </tr>
                 
