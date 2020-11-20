@@ -18,14 +18,26 @@ class DataTable extends React.Component {
             .then(res => {
              
               console.log(res.data.results)
-              this.setState({result: res.data.results, filteredusers: res.data.results, })
+              this.setState({result: res.data.results, filteredusers: res.data.results})
               console.log(this.state.result)
             })
             .catch(err => console.log(err));
             
         };
 
-        
+         sortName = () => {
+            
+            const sortEmployees = this.state.result.sort(function(a, b){
+              var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
+              if (nameA < nameB) //sort string ascending
+               return -1;
+              if (nameA > nameB)
+               return 1;
+              return 0; //default return value (no sorting)
+             });
+           
+      
+          }
       
 
         handleChange = event => {
@@ -35,14 +47,13 @@ class DataTable extends React.Component {
          }, () => { 
              if (this.state.search === ""){
                  this.setState({filteredusers: this.state.result})
-                 console.log(this.setState)
              }
-             else {let filteredusers = this.state.result.filter(user => {
-                return user.name.first.slice(0, this.state.search.length).toLowerCase()=== this.state.search.toLowerCase()
-    
-            })
-            this.setState({filteredusers})
-                 
+             else {
+                 let filteredusers = this.state.result.filter(user => {
+                     return user.name.first.slice(0, this.state.search.length).toLowerCase()=== this.state.search.toLowerCase()
+         
+                 })
+                 this.setState({filteredusers})
      
              }
              
