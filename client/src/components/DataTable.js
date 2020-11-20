@@ -26,7 +26,7 @@ class DataTable extends React.Component {
         };
 
          sortName = () => {
-            
+           
             const sortEmployees = this.state.result.sort(function(a, b){
               var nameA=a.name.first.toLowerCase(), nameB=b.name.first.toLowerCase();
               if (nameA < nameB) //sort string ascending
@@ -35,10 +35,11 @@ class DataTable extends React.Component {
                return 1;
               return 0; //default return value (no sorting)
              });
+            //  line 39 displays the employees on the page
+            this.setState({sortEmployees})
              for (let index = 0; index < sortEmployees.length; index++) {
-                console.log(sortEmployees[index].name.first);
-               }
-           
+              console.log(sortEmployees[index].name.first);
+             }
       
           }
       
