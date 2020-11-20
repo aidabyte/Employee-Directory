@@ -1,4 +1,5 @@
 import React from "react";
+
 function NavBar() {
   return (
     <nav className="navbar-center navbar-expand-lg ">

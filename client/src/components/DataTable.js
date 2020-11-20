@@ -20,9 +20,9 @@ class DataTable extends React.Component {
           axios.get("https://randomuser.me/api/?results=50")
             .then(res => {
              
-              console.log(res.data.results)
+             
               this.setState({result: res.data.results, filteredusers: res.data.results})
-              console.log(this.state.result)
+              
             })
             .catch(err => console.log(err));
             
@@ -41,7 +41,7 @@ class DataTable extends React.Component {
             //  line 39 displays the employees on the page
             this.setState({sortEmployees})
              for (let index = 0; index < sortEmployees.length; index++) {
-              console.log(sortEmployees[index].name.first);
+             
              }
       
           }
