@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./NavBar.css";
+import "./DataTable.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class DataTable extends React.Component {
@@ -75,11 +76,20 @@ class DataTable extends React.Component {
           return (
             <React.Fragment>
              {/*creating a table for everything to display  */}
-             <input type="text" value= {this.state.search} onChange= {this.handleChange}></input>
+             <input type="text" class="inputs" placeholder="search name"value= {this.state.search} onChange= {this.handleChange}></input>
+            <br>
+            </br>
+            <br>
+            </br>
+             
+             <div class="container">
+  
 
-            <table>
+            <table class="table">
                 <tr>
+                <a class="dropdown-items" href="#">
                     <th onClick={()=>this.sortName()}>Full Name</th>
+                    </a>
                     <th>Picture</th> 
                     <th>Age</th>
                     <th>Country</th>
@@ -87,6 +97,7 @@ class DataTable extends React.Component {
                 </tr>
             {this.state.filteredusers.map(user => (
                 <tr>
+                    
                     {/* api calls to get users info */}
                     <td>{user.name.first} {user.name.last}</td>
                     <td> <img src= {user.picture.thumbnail}/></td>
@@ -98,6 +109,9 @@ class DataTable extends React.Component {
             ))}    
             
             </table>
+            </div>
+           
+
             </React.Fragment>
 
           )
