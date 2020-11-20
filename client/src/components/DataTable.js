@@ -35,6 +35,9 @@ class DataTable extends React.Component {
                return 1;
               return 0; //default return value (no sorting)
              });
+             for (let index = 0; index < sortEmployees.length; index++) {
+                console.log(sortEmployees[index].name.first);
+               }
            
       
           }
