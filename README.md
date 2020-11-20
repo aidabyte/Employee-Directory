@@ -12,10 +12,10 @@
 * [Status](#status)
 
 ## Link
-Deployed App:https://shrouded-brook-89856.herokuapp.com/
+Deployed App:https://obscure-reef-68172.herokuapp.com/
 
 ## Screenshot
-![Example screenshot](budgett.png)
+![Example screenshot](employeedirectory.png)
 
 
 ## Technologies
