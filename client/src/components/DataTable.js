@@ -87,7 +87,7 @@ class DataTable extends React.Component {
 
             <table class="table">
                 <tr>
-                <a class="dropdown-items" href="#">
+                <a class="dropdown-items">
                     <th onClick={()=>this.sortName()}>Full Name</th>
                     </a>
                     <th>Picture</th> 
