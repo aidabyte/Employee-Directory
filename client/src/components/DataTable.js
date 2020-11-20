@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import "./NavBar.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class DataTable extends React.Component {
     state = {
