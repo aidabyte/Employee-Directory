@@ -18,7 +18,7 @@ class DataTable extends React.Component {
             .then(res => {
              
               console.log(res.data.results)
-              this.setState({result: res.data.results, filteredusers: res.data.results})
+              this.setState({result: res.data.results, filteredusers: res.data.results, })
               console.log(this.state.result)
             })
             .catch(err => console.log(err));
@@ -62,7 +62,7 @@ class DataTable extends React.Component {
 
             <table>
                 <tr>
-                    <th>Full Name</th>
+                    <th onClick={()=>this.sortName()}>Full Name</th>
                     <th>Picture</th> 
                     <th>Age</th>
                     <th>Country</th>
