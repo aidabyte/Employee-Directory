@@ -2,7 +2,7 @@
 
 
 # Genral Info
-> A directory of employees that consist of the employees name, age, picture, and country. An employer can access a specific employee by typing in their name or the first leters of their name. Also, can search in alphabetical order. 
+> A directory of employees that consist of the employees name, age, picture, and country. An employer can access a specific employee by typing in their name or the first letters of their name. Also, can search in alphabetical order. 
 
 ## Table of contents
 * [General info](#general-info)
