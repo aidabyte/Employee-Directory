@@ -2,7 +2,7 @@
 
 
 # Genral Info
-> A directory of employees that consist of the employees name, age, picture, and country. An employer can access a specific employee by typing in their name or the first letters of their name. Also, can search in alphabetical order. 
+> The goal of this application was to use React for the first time from what we had learned in class. This is app consists of a directory of employees that display the employees name, age, picture, and country. An employer can access a specific employee by typing in their name or the first letters of their name. Also, can search in alphabetical order. The app takes some random employees from the API Random User Generator and then stores the random employees into the table format.
 
 ## Table of contents
 * [General info](#general-info)
