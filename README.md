@@ -9,7 +9,11 @@
 * [Link](#Link)
 * [Screenshot](#screenrecording)
 * [Technologies](#Technologies)
+* [Future Development](#futuredevelopment)
 * [Status](#status)
+
+## Usage
+Clone the respository and install the dependencies that are needed. Run the server with npm start and view application in your browser at local host.
 
 ## Link
 Deployed App:https://dir-of-employees.herokuapp.com
@@ -25,6 +29,9 @@ Deployed App:https://dir-of-employees.herokuapp.com
 4. Heroku
 5. HTML
 6. CSS
+
+## Future Development
+I would love to build extra search filters and make it mobile friendly
 
 
 ## Status
